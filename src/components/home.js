@@ -8,7 +8,7 @@ const Home = () => {
     <div className="container">
       <h1 className="title">Welcome to Itinerary Generator</h1>
       <Carousel>
-        <div>
+        <div> 
           <img src="https://example.com/image1.jpg" alt="Image 1" />
         </div>
         <div>
