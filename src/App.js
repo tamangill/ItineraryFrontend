@@ -1,15 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home';
+import ItineraryPage from './components/itinerarypage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header>
-        <Home></Home>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/itinerary/:location" component={ItineraryPage} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
