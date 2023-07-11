@@ -9,14 +9,7 @@ const Home = () => {
   const handleLocationChange = (e) => {
     setLocation(e.target.value);
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Call your backend API here to fetch the itinerary based on the location
-    console.log('Location:', location);
-    // Reset the input field
-    setLocation('');
-  };
+  
 
   return (
     <div className="container">
@@ -48,14 +41,15 @@ const Home = () => {
         </div>
       </div>
       <div className='location-container'>
-        <div className="location-form">
-          <h2>Enter your location:</h2>
-          <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Enter location" value={location} onChange={handleLocationChange} />
-            <Link to={`/itinerary/${location}`}>Submit</Link>
-          </form>
-        </div>
+      <div className="location-form">
+        <h2>Enter your location:</h2>
+        <form>
+          <input type="text" placeholder="Enter location" value={location} onChange={handleLocationChange} />
+          <Link to={`/itinerary/${location}`}><button type="submit">Submit</button></Link>
+        </form>
       </div>
+      </div>
+
     </div>
   );
 };
