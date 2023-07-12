@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Link } from 'react-router-dom';
+import './home.css';
+
 
 const Home = () => {
   const [location, setLocation] = useState('');
@@ -13,7 +15,7 @@ const Home = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Welcome to Itinerary Generator</h1>
+      <h1 className="title">Itinerary Generator</h1>
       <div className='carousel-container'>
         <Carousel>
           <div>
