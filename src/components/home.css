@@ -7,7 +7,6 @@ body{
 
 .title{
   text-align: center;
-  
   max-height: 35px;
   place-self: top;
   color: whitesmoke;
@@ -24,7 +23,6 @@ body{
 
 }
 .location-container{
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +36,6 @@ body{
 }
 
 .location-form form {
-
   display: flex;
 }
 
@@ -63,12 +60,11 @@ body{
   background-color: #45b6d9;
 }
 
- .thumbs-wrapper {
+.thumbs-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .carousel-container{
   height: fit-content;
@@ -85,7 +81,6 @@ body{
 }
 
 .description-container {
-
   display: flex;
   justify-content: center;
   align-items: center;
