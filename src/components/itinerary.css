@@ -1,0 +1,108 @@
+.title {
+  color: #fff;
+}
+
+.itinerary-page {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+
+.itinerary-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.itinerary-item {
+  flex: 0 0 31%; /* Adjust the width value as needed */
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.itinerary-item h2 {
+  margin-top: 0;
+}
+
+.attractions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.attraction,
+.hotel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #61dafb;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 0.5rem;
+}
+
+.attraction-details,
+.hotel-details {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.attraction-address {
+  text-align: left;
+}
+
+.attraction-details .rating,
+.hotel-details .rating {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.attraction-details .rating span,
+.hotel-details .rating span {
+  margin-left: 0.25rem;
+}
+
+.attraction-details .rating .star,
+.hotel-details .rating .star {
+  color: gold;
+}
+
+.hotel .checkmark {
+  margin-right: 0.5rem;
+}
+
+.create-itineraries-button {
+  padding: 0.5rem 1rem;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.create-itineraries-button:hover {
+  background-color: #45b6d9;
+}
+.loading-text {
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
