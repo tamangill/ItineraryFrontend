@@ -1,3 +1,10 @@
+/* Author: Taman Gill
+ * Description: This file defines the ItineraryPage component, which displays the itinerary for a given location.
+ *              It retrieves the itinerary data from the server, creates multiple itineraries, and renders them on the page.
+ * Date: 07/2023
+ * Copyright: 2023 Taman Gill
+ */
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
@@ -33,6 +40,7 @@ const ItineraryPage = () => {
     fetchItinerary();
   }, [location]);
 
+  // Helper function to create itineraries
   const createItineraries = (itineraryData) => {
     const attractions = itineraryData.attractions || [];
     const hotels = itineraryData.hotels || [];
